@@ -1,17 +1,29 @@
 # Vinicius Borges
 
-Sou dev em Brasília e trabalho com sistema de crédito consignado. Faço um pouco de tudo: tela, API, banco de dados e uns robôs que digitam proposta no lugar da gente.
+Desenvolvedor full stack em Brasília. Trabalho com sistemas de crédito consignado: front-end, APIs REST, integrações com parceiros e automação de processos (RPA).
 
-Uso JavaScript e Node.js na maior parte do tempo, PostgreSQL no banco e Python nos robôs.
+**Stack:** JavaScript, Node.js, Express, PostgreSQL, Python, Chart.js
 
-Quase tudo que faço está em repositório privado, então vou anotando por aqui o que andei fazendo.
+O código fica em repositórios privados. Abaixo, um registro do que foi entregue.
 
-## Semana de 17 a 24/11/2026
+## Registro de atividades
 
-Refiz do zero a tela de um dashboard de vendas. A tabela antiga só mostrava uma linha e o gráfico não tinha nem legenda. A primeira versão nova ficou pior que a original, aí mudei o layout inteiro e deu certo. Agora funciona no celular também.
+### 17 a 24/11/2026
 
-Passei boa parte da segunda-feira numa API para outro sistema consultar o nosso. O mais chato foi não deixar a mesma consulta rodar duas vezes quando chegam pedidos iguais juntos.
+**Front-end**
+- Dashboard de vendas refeito: layout responsivo, tema escuro, gráficos de linha e rosca em Chart.js, tabela com cabeçalho fixo e rolagem interna
+- Escape dos dados da API antes da renderização no HTML
+- Histórico das últimas consultas por CPF em três telas
 
-Nos robôs saíram cinco versões na semana. Tem um novo, e ele agora confere os campos da proposta que preenche.
+**Back-end**
+- API REST para integração entre sistemas: autenticação por token, cache, deduplicação de requisições e limite de uso
+- Especificação OpenAPI e guia de instalação da API
+- Migração de uma integração legada para a API de outro parceiro
+- Busca por CPF extraída para um serviço reutilizável, com testes de caracterização antes do refactor
 
-Também troquei uma integração antiga por outra API, coloquei o histórico das últimas consultas em três telas e arrumei uns erros de lint que tinham quebrado o CI.
+**RPA (Python)**
+- Cinco versões do agente publicadas, incluindo um robô novo
+- Conferência dos campos preenchidos e bloqueio de casos não permitidos
+
+**CI**
+- Correção dos erros de lint que quebravam o pipeline da `main`
