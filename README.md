@@ -37,6 +37,25 @@ Desenvolvo telas, APIs REST, integrações com parceiros e automação de proces
 
 ## 📅 Registro de atividades
 
+### 24/11/2026 a 27/11/2026
+
+**Front-end**
+- Nova coluna com etiqueta colorida de classificação na listagem de contratos do dashboard
+- Cartões de consulta compactos, com carrossel vertical
+- Cartão por contrato com separação entre aprovados e reprovados
+- Seleção da instituição no cartão de consulta para montar a proposta
+- Correção de quebra de linha em valores longos no cartão, que antes eram cortados
+
+**Back-end**
+- Desenho, plano e funções puras para identificar a classificação da proposta e montar seu cabeçalho
+- Cabeçalho e dados de identificação revisados na proposta em PDF e em imagem
+- Preservação, nos dados em JSON da proposta calculada, de campo usado na geração da imagem
+- Cálculo do cartão por contrato baseado na tabela vigente
+- Ajustes nos fluxos de simulação das integrações com parceiros
+
+**Testes**
+- Cobertura de testes para o dashboard
+
 ### 17 a 24/11/2026
 
 **Front-end**
